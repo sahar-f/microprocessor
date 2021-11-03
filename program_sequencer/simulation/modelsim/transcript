@@ -1,0 +1,34 @@
+# Compile of program_sequencer.vo was successful.
+# Compile of prg_sequencer_tb.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.p_sequencer_tb -L altera_mf_ver -L altera_ver -L cycloneive_ver
+# vsim -gui work.p_sequencer_tb -L altera_mf_ver -L altera_ver -L cycloneive_ver 
+# Start time: 23:25:14 on Nov 02,2021
+# Loading sv_std.std
+# Loading work.p_sequencer_tb
+# Loading work.program_sequencer
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+add wave -position insertpoint  \
+sim:/p_sequencer_tb/clk \
+sim:/p_sequencer_tb/sync_reset \
+sim:/p_sequencer_tb/jump \
+sim:/p_sequencer_tb/zero_flag \
+sim:/p_sequencer_tb/conditional_jump \
+sim:/p_sequencer_tb/correct_address \
+sim:/p_sequencer_tb/count \
+sim:/p_sequencer_tb/LS_nibble_ir \
+sim:/p_sequencer_tb/pm_address
+run -all
+# ** Note: $stop    : C:/Users/Sahar/Desktop/CME341_Assignments/microprocessor/program_sequencer/simulation/modelsim/prg_sequencer_tb.sv(14)
+#    Time: 50 us  Iteration: 0  Instance: /p_sequencer_tb
+# Break in Module p_sequencer_tb at C:/Users/Sahar/Desktop/CME341_Assignments/microprocessor/program_sequencer/simulation/modelsim/prg_sequencer_tb.sv line 14
+# End time: 23:53:01 on Nov 02,2021, Elapsed time: 0:27:47
+# Errors: 0, Warnings: 6

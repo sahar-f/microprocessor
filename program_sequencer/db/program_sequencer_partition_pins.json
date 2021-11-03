@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "pm_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "pm_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "pm_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "pm_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "pm_addr[4]",
+					"strict" : false
+				},
+				{
+					"name" : "pm_addr[5]",
+					"strict" : false
+				},
+				{
+					"name" : "pm_addr[6]",
+					"strict" : false
+				},
+				{
+					"name" : "pm_addr[7]",
+					"strict" : false
+				},
+				{
+					"name" : "jmp",
+					"strict" : false
+				},
+				{
+					"name" : "jmp_nz",
+					"strict" : false
+				},
+				{
+					"name" : "dont_jmp",
+					"strict" : false
+				},
+				{
+					"name" : "sync_reset",
+					"strict" : false
+				},
+				{
+					"name" : "jmp_addr[0]",
+					"strict" : false
+				},
+				{
+					"name" : "jmp_addr[1]",
+					"strict" : false
+				},
+				{
+					"name" : "jmp_addr[2]",
+					"strict" : false
+				},
+				{
+					"name" : "jmp_addr[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

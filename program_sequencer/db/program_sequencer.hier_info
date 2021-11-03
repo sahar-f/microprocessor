@@ -1,0 +1,42 @@
+|program_sequencer
+clk => pc[0].CLK
+clk => pc[1].CLK
+clk => pc[2].CLK
+clk => pc[3].CLK
+clk => pc[4].CLK
+clk => pc[5].CLK
+clk => pc[6].CLK
+clk => pc[7].CLK
+sync_reset => pm_addr[3].IN1
+sync_reset => pm_addr[7]$latch.ACLR
+sync_reset => pm_addr[6]$latch.ACLR
+sync_reset => pm_addr[5]$latch.ACLR
+sync_reset => pm_addr[4]$latch.ACLR
+jmp => pm_addr[3].IN1
+jmp => pm_addr[4].OUTPUTSELECT
+jmp => pm_addr[5].OUTPUTSELECT
+jmp => pm_addr[6].OUTPUTSELECT
+jmp => pm_addr[7].OUTPUTSELECT
+jmp => pm_addr[7].IN1
+jmp_nz => always1.IN0
+jmp_nz => always1.IN0
+dont_jmp => always1.IN1
+dont_jmp => always1.IN1
+jmp_addr[0] => pm_addr[4].DATAB
+jmp_addr[0] => pm_addr[4].DATAB
+jmp_addr[1] => pm_addr[5].DATAB
+jmp_addr[1] => pm_addr[5].DATAB
+jmp_addr[2] => pm_addr[6].DATAB
+jmp_addr[2] => pm_addr[6].DATAB
+jmp_addr[3] => pm_addr[7].DATAB
+jmp_addr[3] => pm_addr[7].DATAB
+pm_addr[0] <= pm_addr[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pm_addr[1] <= pm_addr[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pm_addr[2] <= pm_addr[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pm_addr[3] <= pm_addr[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pm_addr[4] <= pm_addr[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pm_addr[5] <= pm_addr[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pm_addr[6] <= pm_addr[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+pm_addr[7] <= pm_addr[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
